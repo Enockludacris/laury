@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffe6f0;
+  font-family: 'Comic Sans MS', cursive;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  padding: 50px;
+}
+
+h1 {
+  color: #d63384;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.photo {
+  width: 250px;
+  border-radius: 50%;
+  border: 5px solid #d63384;
+  box-shadow: 0 0 20px #ff99cc;
+}
+
+.message {
+  font-size: 1.5em;
+  color: #800040;
+  margin-top: 30px;
+}
+
+.heart {
+  position: absolute;
+  color: red;
+  animation: float 6s infinite ease-in;
+  font-size: 20px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-800px) scale(1.5);
+    opacity: 0;
+  }
+}
